@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName = "VVE_Traveller"]/comps</xpath>
+		<value>
+			<li Class = "Vehicles.CompProperties_UpgradeTree">
+				<def>VVE_Traveller_UpgradeTree</def>
+			</li>
+		</value>
+	</Operation>
+</Patch>
