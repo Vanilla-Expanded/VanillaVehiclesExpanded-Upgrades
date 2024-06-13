@@ -22,8 +22,7 @@
 						<health>
 							<li>
 								<key>FrontBumper</key>
-								<value>100</value>
-								<type>Set</type>
+								<value>80</value>
 							</li>
 						</health>
 					</li>
@@ -111,26 +110,16 @@
 								<def>ArmorRating_Blunt</def>
 								<value>0.08</value>
 							</li>
-						</stats>
-					</li>
-					<li Class = "Vehicles.StatUpgrade">
-						<stats>
 							<li>
 								<def>ArmorRating_Sharp</def>
 								<value>0.12</value>
 							</li>
 						</stats>
-					</li>
-					<li Class = "Vehicles.StatUpgrade">
 						<vehicleStats>
 							<li>
 								<def>AccelerationRate</def>
 								<value>-0.01</value>
 							</li>
-						</vehicleStats>
-					</li>
-					<li Class = "Vehicles.StatUpgrade">
-						<vehicleStats>
 							<li>
 								<def>Mass</def>
 								<value>40</value>
@@ -167,7 +156,27 @@
 				<gridCoordinate>(7, 17)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				
-				<upgrades/>
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<statCategories>
+							<li>
+								<def>OffRoadMultiplier</def>
+								<value>-0.25</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>WinterCostMultiplier</def>
+								<value>-1.0</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>WorldSpeedMultiplier</def>
+								<value>0.1</value>
+								<type>Add</type>
+							</li>
+						</statCategories>
+					</li>
+				</upgrades>
 				
 				<ingredients>
 					<VVE_CarWheel>4</VVE_CarWheel>

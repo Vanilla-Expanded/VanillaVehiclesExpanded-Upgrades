@@ -6,61 +6,52 @@
 		
 		<nodes>
 			<li>
-				<key>ReinforcedBumper</key>
-				<label>Reinforced Bumper</label>
-				<description>Reinforce the front bumper to allow this vehicle to deal more damage during collisions.</description>
+				<key>BigChemtanks</key>
+				<label>Big Chemtanks</label>
+				<description>Attach two big chemfuel canisters to the bottom of the vehicle to allow it to travel greater distances without the risk of running out of fuel.</description>
 				
-				<icon>Upgrades/Upgrade_Bumper</icon>
+				<icon>Upgrades/Upgrade_FuelStorage</icon>
 				
-				<work>1800</work>
+				<work>2000</work>
 				
 				<gridCoordinate>(7, 6)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				
 				<upgrades>
-					<li Class = "Vehicles.VehicleUpgrade">
-						<health>
-							<li>
-								<key>FrontBumper</key>
-								<value>100</value>
-								<type>Set</type>
-							</li>
-						</health>
-					</li>
 					<li Class = "Vehicles.StatUpgrade">
 						<statCategories>
 							<li>
-								<def>PawnCollisionMultiplier</def>
-								<value>0.2</value>
+								<def>FuelCapacity</def>
+								<value>160</value>
 							</li>
 						</statCategories>
 					</li>
 				</upgrades>
 				
 				<ingredients>
-					<Steel>100</Steel>
+					<Steel>60</Steel>
 				</ingredients>
 				
 				<graphicOverlays>
 					<li>
 						<graphicData>
-							<texPath>Upgrades/Traveller/Tier1_Traveller_UpgradeBumper</texPath>
+							<texPath>Upgrades/Mule/Tier1_Hauler_UpgradeChemfuel</texPath>
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawSize>(3,5)</drawSize>
-							<layer>1</layer>
+							<layer>-1</layer>
 							<shaderType>Cutout</shaderType>
 						</graphicData>
 					</li>
 				</graphicOverlays>
 			</li>
 			<li>
-				<key>CargoRack</key>
-				<label>Cargo Rack</label>
-				<description>Construct a steel, lightweight cargo rack on the roof of the vehicle to increase the cargo capacity.</description>
+				<key>ExpandedCargoSpace</key>
+				<label>Expanded Cargo Space</label>
+				<description>Increase the amount of cargo that can be hauled by this vehicle, and add two additional passenger slots.</description>
 				
-				<icon>Upgrades/Upgrade_CargoRack</icon>
+				<icon>Upgrades/Upgrade_ExpandedCargo</icon>
 				
-				<work>1400</work>
+				<work>3200</work>
 				
 				<gridCoordinate>(21, 6)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
@@ -70,20 +61,37 @@
 						<vehicleStats>
 							<li>
 								<def>CargoCapacity</def>
-								<value>80</value>
+								<value>200</value>
 							</li>
 						</vehicleStats>
+					</li>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<roles>
+							<li>
+								<key>passenger_rear</key>
+								<label>Passenger Cargo</label>
+								<slots>2</slots>
+								
+								<hitbox>
+									<cells>
+										<li>(0, 0)</li>
+										<li>(1, 0)</li>
+									</cells>
+								</hitbox>
+							</li>
+						</roles>
 					</li>
 				</upgrades>
 				
 				<ingredients>
-					<Steel>100</Steel>
+					<Steel>60</Steel>
+					<Cloth>220</Cloth>
 				</ingredients>
 				
 				<graphicOverlays>
 					<li>
 						<graphicData>
-							<texPath>Upgrades/Traveller/Tier1_Traveller_UpgradeCargo</texPath>
+							<texPath>Upgrades/Mule/Tier1_Hauler_UpgradeCargo</texPath>
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawSize>(3,5)</drawSize>
 							<layer>3</layer>
@@ -106,36 +114,26 @@
 				
 				<upgrades>
 					<li Class = "Vehicles.StatUpgrade">
-						<stats>
-							<li>
-								<def>ArmorRating_Blunt</def>
-								<value>0.08</value>
-							</li>
-						</stats>
-					</li>
-					<li Class = "Vehicles.StatUpgrade">
-						<stats>
-							<li>
-								<def>ArmorRating_Sharp</def>
-								<value>0.12</value>
-							</li>
-						</stats>
-					</li>
-					<li Class = "Vehicles.StatUpgrade">
 						<vehicleStats>
 							<li>
 								<def>AccelerationRate</def>
 								<value>-0.01</value>
 							</li>
-						</vehicleStats>
-					</li>
-					<li Class = "Vehicles.StatUpgrade">
-						<vehicleStats>
 							<li>
 								<def>Mass</def>
 								<value>40</value>
 							</li>
 						</vehicleStats>
+						<stats>
+							<li>
+								<def>ArmorRating_Sharp</def>
+								<value>0.12</value>
+							</li>
+							<li>
+								<def>ArmorRating_Blunt</def>
+								<value>0.08</value>
+							</li>
+						</stats>
 					</li>
 				</upgrades>
 				
@@ -146,7 +144,7 @@
 				<graphicOverlays>
 					<li>
 						<graphicData>
-							<texPath>Upgrades/Traveller/Tier1_Traveller_UpgradeArmor</texPath>
+							<texPath>Upgrades/Mule/Tier1_Hauler_UpgradeArmor</texPath>
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawSize>(3,5)</drawSize>
 							<layer>2</layer>
@@ -156,8 +154,8 @@
 				</graphicOverlays>
 			</li>
 			<li>
-				<key>OffRoadTires</key>
-				<label>Off Road Tires</label>
+				<key>OffroadTires</key>
+				<label>Offroad Tires</label>
 				<description>Replace the tires with deep threaded tires that provide more traction and will allow the vehicle to move significantly faster offroad.</description>
 				
 				<icon>Upgrades/Upgrade_OffroadTires</icon>
@@ -167,7 +165,27 @@
 				<gridCoordinate>(7, 17)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				
-				<upgrades/>
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<statCategories>
+							<li>
+								<def>OffRoadMultiplier</def>
+								<value>-0.2</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>WinterCostMultiplier</def>
+								<value>-1.0</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>WorldSpeedMultiplier</def>
+								<value>0.1</value>
+								<type>Add</type>
+							</li>
+						</statCategories>
+					</li>
+				</upgrades>
 				
 				<ingredients>
 					<VVE_CarWheel>4</VVE_CarWheel>
@@ -178,7 +196,7 @@
 				<graphicOverlays>
 					<li>
 						<graphicData>
-							<texPath>Upgrades/Traveller/Tier1_Traveller_UpgradeTires</texPath>
+							<texPath>Upgrades/Mule/Tier1_Hauler_UpgradeTires</texPath>
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawSize>(3,5)</drawSize>
 							<layer>1</layer>
@@ -188,13 +206,13 @@
 				</graphicOverlays>
 			</li>
 			<li>
-				<key>Spoiler</key>
-				<label>Spoiler</label>
-				<description>Install a spoiler to boost the maximum speed of the vehicle slightly.</description>
+				<key>ExteriorEngine</key>
+				<label>Exterior Engine</label>
+				<description>Elevate the engine to improve its efficiency at the cost of exposing it to damage.</description>
 				
-				<icon>Upgrades/Upgrade_Spoiler</icon>
+				<icon>Upgrades/Upgrade_SupercarEngine</icon>
 				
-				<work>1200</work>
+				<work>3200</work>
 				
 				<gridCoordinate>(21, 17)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
@@ -203,90 +221,36 @@
 					<li Class = "Vehicles.StatUpgrade">
 						<vehicleStats>
 							<li>
-								<def>MoveSpeed</def>
-								<value>1</value>
-							</li>
-						</vehicleStats>
-					</li>
-				</upgrades>
-				
-				<ingredients>
-					<Steel>60</Steel>
-				</ingredients>
-				
-				<graphicOverlays>
-					<li>
-						<graphicData>
-							<texPath>Upgrades/Traveller/Tier1_Traveller_UpgradeSpeed</texPath>
-							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-							<drawSize>(3,5)</drawSize>
-							<layer>1</layer>
-							<shaderType>CutoutComplexPattern</shaderType>
-						</graphicData>
-					</li>
-				</graphicOverlays>
-			</li>
-			<li>
-				<key>SupercarEngine</key>
-				<label>Supercar Engine</label>
-				<description>Install a supercar engine, greatly increasing movement speed and acceleration of the vehicle at the cost of fuel efficiency.</description>
-				
-				<icon>Upgrades/Upgrade_SupercarEngine</icon>
-				
-				<work>3000</work>
-				
-				<gridCoordinate>(35, 17)</gridCoordinate>
-				<drawSize>(80, 80)</drawSize>
-				
-				<upgrades>
-					<li Class = "Vehicles.StatUpgrade">
-						<vehicleStats>
-							<li>
-								<def>MoveSpeed</def>
-								<value>2.4</value>
-							</li>
-							<li>
 								<def>AccelerationRate</def>
-								<value>0.06</value>
+								<value>0.02</value>
 							</li>
 						</vehicleStats>
 						<statCategories>
 							<li>
 								<def>FuelConsumptionRate</def>
-								<value>12</value>
+								<value>-2</value>
 							</li>
 						</statCategories>
 					</li>
-					<li Class = "Vehicles.SoundUpgrade">
-						<addSustainers>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<health>
 							<li>
-								<start>IgnitionOn</start>
-								<stop>IgnitionOff</stop>
-								<value>VVE_VehicleEngineSuperCar</value>
-								<removalKey>SupercarEngine</removalKey>
+								<key>Engine</key>
+								<depth>External</depth>
 							</li>
-						</addSustainers>
-						<removeSustainers>
-							<li>
-								<start>IgnitionOn</start>
-								<stop>IgnitionOff</stop>
-								<value>VVE_VehicleEngineMuscleCar</value>
-								<removalKey>DefaultEngine</removalKey>
-							</li>
-						</removeSustainers>
+						</health>
 					</li>
 				</upgrades>
 				
 				<ingredients>
-					<VVE_EngineBlock>1</VVE_EngineBlock>
-					<Silver>100</Silver>
-					<VVE_CarTransmission>1</VVE_CarTransmission>
+					<Steel>40</Steel>
+					<ComponentIndustrial>2</ComponentIndustrial>
 				</ingredients>
 				
 				<graphicOverlays>
 					<li>
 						<graphicData>
-							<texPath>Upgrades/Traveller/Tier1_Traveller_UpgradeEngine</texPath>
+							<texPath>Upgrades/Mule/Tier1_Hauler_UpgradeEngine</texPath>
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawSize>(3,5)</drawSize>
 							<layer>1</layer>
