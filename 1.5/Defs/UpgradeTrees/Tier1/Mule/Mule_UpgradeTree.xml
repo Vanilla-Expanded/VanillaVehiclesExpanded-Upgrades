@@ -69,7 +69,7 @@
 						<roles>
 							<li>
 								<key>passenger_rear</key>
-								<label>Passenger Cargo</label>
+								<label>Passenger</label>
 								<slots>2</slots>
 								
 								<hitbox>

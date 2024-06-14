@@ -22,12 +22,12 @@
 						<statCategories>
 							<li>
 								<def>OffRoadMultiplier</def>
-								<value>-0.75</value>
+								<value>-0.25</value>
 								<type>Add</type>
 							</li>
 							<li>
 								<def>WinterCostMultiplier</def>
-								<value>-2.45</value>
+								<value>-1</value>
 								<type>Add</type>
 							</li>
 							<li>
@@ -116,26 +116,16 @@
 								<def>ArmorRating_Blunt</def>
 								<value>0.1</value>
 							</li>
-						</stats>
-					</li>
-					<li Class = "Vehicles.StatUpgrade">
-						<stats>
 							<li>
 								<def>ArmorRating_Sharp</def>
 								<value>0.1</value>
 							</li>
 						</stats>
-					</li>
-					<li Class = "Vehicles.StatUpgrade">
 						<vehicleStats>
 							<li>
 								<def>AccelerationRate</def>
 								<value>-0.01</value>
 							</li>
-						</vehicleStats>
-					</li>
-					<li Class = "Vehicles.StatUpgrade">
-						<vehicleStats>
 							<li>
 								<def>Mass</def>
 								<value>40</value>

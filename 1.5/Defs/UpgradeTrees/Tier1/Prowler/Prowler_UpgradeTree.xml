@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.UpgradeTreeDef>
+		<defName>VVE_Prowler_UpgradeTree</defName>
+		 
+		<nodes>
+			<li>
+				<key>ReinforcedArmor</key>
+				<label>Reinforced Armor</label>
+				<description>Weld a layer of reinforced steel plating to the vehicle, increasing its armor value at the cost of increasing vehicle mass and lowering acceleration.</description>
+				
+				<icon>Upgrades/Upgrade_ExtraArmor</icon>
+				
+				<work>4000</work>
+				
+				<gridCoordinate>(7, 6)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<stats>
+							<li>
+								<def>ArmorRating_Blunt</def>
+								<value>0.16</value>
+							</li>
+							<li>
+								<def>ArmorRating_Sharp</def>
+								<value>0.18</value>
+							</li>
+						</stats>
+						<vehicleStats>
+							<li>
+								<def>AccelerationRate</def>
+								<value>-0.01</value>
+							</li>
+							<li>
+								<def>Mass</def>
+								<value>40</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>100</Steel>
+				</ingredients>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Upgrades/Prowler/Tier1_APC_UpgradeEngineCover</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(3,5)</drawSize>
+							<layer>1</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>ReinforcedBumper</key>
+				<label>Reinforced Bumper</label>
+				<description>Reinforce the front bumper to allow this vehicle to deal more damage during collisions.</description>
+				
+				<icon>Upgrades/Upgrade_Bumper</icon>
+				
+				<work>1800</work>
+				
+				<gridCoordinate>(21, 6)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<statCategories>
+							<li>
+								<def>PawnCollisionMultiplier</def>
+								<value>0.2</value>
+							</li>
+						</statCategories>
+					</li>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<health>
+							<li>
+								<key>FrontBumper</key>
+								<value>80</value>
+							</li>
+						</health>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>100</Steel>
+				</ingredients>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Upgrades/Highwayman/Tier1_APC_UpgradeBumper</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(3, 5)</drawSize>
+							<layer>1</layer>
+							<shaderType>Cutout</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>LargerCabin</key>
+				<label>Larger Cabin</label>
+				<description>Extend the cabin by adding space for an additional passenger.</description>
+				
+				<icon>Upgrades/Upgrade_ExtraSeat</icon>
+				
+				<work>3200</work>
+				
+				<gridCoordinate>(35, 6)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<roles>
+							<li>
+								<key>passenger</key>
+								<editKey>largerCabin</editKey>
+								
+								<slots>2</slots>
+							</li>
+						</roles>
+						<retextureDef>HighwayRetexture</retextureDef>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>60</Steel>
+				</ingredients>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Upgrades/Highwayman/Tier1_APC_UpgradeCrew</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(3, 5)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>OffRoadTires</key>
+				<label>Off Road Tires</label>
+				<description>Replace the tires with deep treaded tires that provide more traction and will allow the vehicle to move significantly faster offroad.</description>
+				
+				<icon>Upgrades/Upgrade_OffroadTires</icon>
+				
+				<work>2000</work>
+				
+				<gridCoordinate>(7, 17)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<statCategories>
+							<li>
+								<def>OffRoadMultiplier</def>
+								<value>-0.25</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>WinterCostMultiplier</def>
+								<value>-1.0</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>WorldSpeedMultiplier</def>
+								<value>0.1</value>
+								<type>Add</type>
+							</li>
+						</statCategories>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<VVE_CarWheel>4</VVE_CarWheel>
+					<Steel>40</Steel>
+					<Chemfuel>40</Chemfuel>
+				</ingredients>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Upgrades/Highwayman/Tier1_APC_UpgradeTires</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(3,5)</drawSize>
+							<layer>1</layer>
+							<shaderType>Cutout</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>ImprovedTurret</key>
+				<label>Improved Turret</label>
+				<description>Improve the turret with more efficient firing mechanism and ammo feeding system, allowing it to fire more rapidly and with higher accuracy. Additionally, install smokepop canisters on a turret, allowing the vehicle to eject a smoke screen.</description>
+				
+				<icon>Upgrades/Upgrade_TurretImproved</icon>
+				
+				<work>7800</work>
+				
+				<gridCoordinate>(21, 17)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>Highwayman_MainTurret_Improved</turretDef>
+								
+								<renderProperties>
+									<north>(0, 0.85)</north>
+									<south>(0, 0.5)</south>
+									<east>(0.1, 0.5)</east>
+								</renderProperties>
+								<drawLayer>3</drawLayer>
+
+								<gizmoLabel>Main Turret</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.65)</aimPieOffset>
+								
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>80</Steel>
+					<ComponentIndustrial>5</ComponentIndustrial>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+</Defs>

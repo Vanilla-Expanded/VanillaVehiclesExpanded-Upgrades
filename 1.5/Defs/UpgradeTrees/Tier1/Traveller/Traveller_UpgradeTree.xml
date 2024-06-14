@@ -18,14 +18,6 @@
 				<drawSize>(80, 80)</drawSize>
 				
 				<upgrades>
-					<li Class = "Vehicles.VehicleUpgrade">
-						<health>
-							<li>
-								<key>FrontBumper</key>
-								<value>80</value>
-							</li>
-						</health>
-					</li>
 					<li Class = "Vehicles.StatUpgrade">
 						<statCategories>
 							<li>
@@ -33,6 +25,14 @@
 								<value>0.2</value>
 							</li>
 						</statCategories>
+					</li>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<health>
+							<li>
+								<key>FrontBumper</key>
+								<value>80</value>
+							</li>
+						</health>
 					</li>
 				</upgrades>
 				
