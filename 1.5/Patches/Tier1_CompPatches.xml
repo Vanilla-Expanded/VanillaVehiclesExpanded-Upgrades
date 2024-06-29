@@ -45,4 +45,13 @@
 			</li>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName = "VVE_Prowler"]/comps</xpath>
+		<value>
+			<li Class = "Vehicles.CompProperties_UpgradeTree">
+				<def>VVE_Prowler_UpgradeTree</def>
+			</li>
+		</value>
+	</Operation>
 </Patch>

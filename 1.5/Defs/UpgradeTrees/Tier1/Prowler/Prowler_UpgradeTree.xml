@@ -49,99 +49,10 @@
 				<graphicOverlays>
 					<li>
 						<graphicData>
-							<texPath>Upgrades/Prowler/Tier1_APC_UpgradeEngineCover</texPath>
+							<texPath>Upgrades/Prowler/Tier1_Explorer_UpgradeArmor</texPath>
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-							<drawSize>(3,5)</drawSize>
+							<drawSize>(3,4)</drawSize>
 							<layer>1</layer>
-							<shaderType>CutoutComplexPattern</shaderType>
-						</graphicData>
-					</li>
-				</graphicOverlays>
-			</li>
-			<li>
-				<key>ReinforcedBumper</key>
-				<label>Reinforced Bumper</label>
-				<description>Reinforce the front bumper to allow this vehicle to deal more damage during collisions.</description>
-				
-				<icon>Upgrades/Upgrade_Bumper</icon>
-				
-				<work>1800</work>
-				
-				<gridCoordinate>(21, 6)</gridCoordinate>
-				<drawSize>(80, 80)</drawSize>
-				
-				<upgrades>
-					<li Class = "Vehicles.StatUpgrade">
-						<statCategories>
-							<li>
-								<def>PawnCollisionMultiplier</def>
-								<value>0.2</value>
-							</li>
-						</statCategories>
-					</li>
-					<li Class = "Vehicles.VehicleUpgrade">
-						<health>
-							<li>
-								<key>FrontBumper</key>
-								<value>80</value>
-							</li>
-						</health>
-					</li>
-				</upgrades>
-				
-				<ingredients>
-					<Steel>100</Steel>
-				</ingredients>
-				
-				<graphicOverlays>
-					<li>
-						<graphicData>
-							<texPath>Upgrades/Highwayman/Tier1_APC_UpgradeBumper</texPath>
-							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-							<drawSize>(3, 5)</drawSize>
-							<layer>1</layer>
-							<shaderType>Cutout</shaderType>
-						</graphicData>
-					</li>
-				</graphicOverlays>
-			</li>
-			<li>
-				<key>LargerCabin</key>
-				<label>Larger Cabin</label>
-				<description>Extend the cabin by adding space for an additional passenger.</description>
-				
-				<icon>Upgrades/Upgrade_ExtraSeat</icon>
-				
-				<work>3200</work>
-				
-				<gridCoordinate>(35, 6)</gridCoordinate>
-				<drawSize>(80, 80)</drawSize>
-				
-				<upgrades>
-					<li Class = "Vehicles.VehicleUpgrade">
-						<roles>
-							<li>
-								<key>passenger</key>
-								<editKey>largerCabin</editKey>
-								
-								<slots>2</slots>
-							</li>
-						</roles>
-						<retextureDef>HighwayRetexture</retextureDef>
-					</li>
-				</upgrades>
-				
-				<ingredients>
-					<Steel>60</Steel>
-				</ingredients>
-				
-				<graphicOverlays>
-					<li>
-						<graphicData>
-							<texPath>Upgrades/Highwayman/Tier1_APC_UpgradeCrew</texPath>
-							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-							<drawSize>(3, 5)</drawSize>
-							<layer>2</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 						</graphicData>
 					</li>
@@ -156,9 +67,11 @@
 				
 				<work>2000</work>
 				
-				<gridCoordinate>(7, 17)</gridCoordinate>
+				<gridCoordinate>(21, 6)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				
+				<disableIfUpgradeNodeEnabled>ChainedTires</disableIfUpgradeNodeEnabled>
+
 				<upgrades>
 					<li Class = "Vehicles.StatUpgrade">
 						<statCategories>
@@ -169,7 +82,7 @@
 							</li>
 							<li>
 								<def>WinterCostMultiplier</def>
-								<value>-1.0</value>
+								<value>-2.0</value>
 								<type>Add</type>
 							</li>
 							<li>
@@ -190,9 +103,9 @@
 				<graphicOverlays>
 					<li>
 						<graphicData>
-							<texPath>Upgrades/Highwayman/Tier1_APC_UpgradeTires</texPath>
+							<texPath>Upgrades/Prowler/Tier1_Explorer_UpgradeOffroadTires</texPath>
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-							<drawSize>(3,5)</drawSize>
+							<drawSize>(3,4)</drawSize>
 							<layer>1</layer>
 							<shaderType>Cutout</shaderType>
 						</graphicData>
@@ -200,8 +113,99 @@
 				</graphicOverlays>
 			</li>
 			<li>
-				<key>ImprovedTurret</key>
-				<label>Improved Turret</label>
+				<key>ChainedTires</key>
+				<label>Chained Tires</label>
+				<description>Mount thick steel chains around tires, preventing them from slipping on icy surfaces and greatly improving winter travel speed. The additional grip slightly increases acceleration.</description>
+				
+				<icon>Upgrades/Upgrade_ChainedTires</icon>
+				
+				<work>2000</work>
+				
+				<gridCoordinate>(35, 6)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<disableIfUpgradeNodeEnabled>OffRoadTires</disableIfUpgradeNodeEnabled>
+
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<statCategories>
+							<li>
+								<def>OffRoadMultiplier</def>
+								<value>-0.25</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>WinterCostMultiplier</def>
+								<value>-2.25</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>WorldSpeedMultiplier</def>
+								<value>0.1</value>
+								<type>Add</type>
+							</li>
+						</statCategories>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>40</Steel>
+				</ingredients>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Upgrades/Prowler/Tier1_Explorer_UpgradeChainedTires</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(3,4)</drawSize>
+							<layer>1</layer>
+							<shaderType>Cutout</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>Spoiler</key>
+				<label>Spoiler</label>
+				<description>Install a spoiler to boost the maximum speed of the vehicle slightly.</description>
+				
+				<icon>Upgrades/Upgrade_Spoiler</icon>
+				
+				<work>1200</work>
+				
+				<gridCoordinate>(7, 17)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>MoveSpeed</def>
+								<value>1</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>60</Steel>
+				</ingredients>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Upgrades/Prowler/Tier1_Explorer_UpgradeSpeed</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(3,4)</drawSize>
+							<layer>1</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>MiniTurret</key>
+				<label>Mini Turret</label>
 				<description>Improve the turret with more efficient firing mechanism and ammo feeding system, allowing it to fire more rapidly and with higher accuracy. Additionally, install smokepop canisters on a turret, allowing the vehicle to eject a smoke screen.</description>
 				
 				<icon>Upgrades/Upgrade_TurretImproved</icon>
@@ -215,7 +219,7 @@
 					<li Class = "Vehicles.TurretUpgrade">
 						<turrets>
 							<li>
-								<turretDef>Highwayman_MainTurret_Improved</turretDef>
+								<turretDef>Prowler_MiniTurret</turretDef>
 								
 								<renderProperties>
 									<north>(0, 0.85)</north>
@@ -232,16 +236,25 @@
 								<key>mainTurret</key>
 							</li>
 						</turrets>
-						<removeTurrets>
-							<li>mainTurret</li>
-						</removeTurrets>
 					</li>
 				</upgrades>
 				
 				<ingredients>
-					<Steel>80</Steel>
-					<ComponentIndustrial>5</ComponentIndustrial>
+					<Steel>100</Steel>
+					<ComponentIndustrial>2</ComponentIndustrial>
 				</ingredients>
+
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Upgrades/Prowler/Tier1_Explorer_UpgradeTurretBase</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(3,4)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
 			</li>
 		</nodes>
 	</Vehicles.UpgradeTreeDef>

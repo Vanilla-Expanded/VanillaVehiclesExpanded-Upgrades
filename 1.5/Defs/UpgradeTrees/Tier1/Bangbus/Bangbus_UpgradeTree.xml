@@ -27,7 +27,7 @@
 							</li>
 							<li>
 								<def>WinterCostMultiplier</def>
-								<value>-1</value>
+								<value>-2</value>
 								<type>Add</type>
 							</li>
 							<li>

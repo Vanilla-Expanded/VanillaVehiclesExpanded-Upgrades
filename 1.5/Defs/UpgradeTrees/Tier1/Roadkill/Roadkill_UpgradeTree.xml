@@ -50,7 +50,7 @@
 							<texPath>Upgrades/Roadkill/Tier1_Tank_UpgradeEngineCover</texPath>
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawSize>(4,4)</drawSize>
-							<layer>1</layer>
+							<layer>3</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 						</graphicData>
 					</li>
@@ -178,7 +178,7 @@
 							<texPath>Upgrades/Roadkill/Tier1_Tank_UpgradeGunnerSeat</texPath>
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawSize>(4,4)</drawSize>
-							<layer>2</layer>
+							<layer>1</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 						</graphicData>
 					</li>
@@ -278,7 +278,8 @@
 				
 				<gridCoordinate>(21, 17)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
-				
+				<disableIfUpgradeNodeEnabled>ShortBarrel</disableIfUpgradeNodeEnabled>
+
 				<upgrades>
 					<li Class = "Vehicles.TurretUpgrade">
 						<turrets>
@@ -290,7 +291,7 @@
 									<south>(0, 0.25)</south>
 									<east>(0.05, 0.35)</east>
 								</renderProperties>
-								<drawLayer>3</drawLayer>
+								<drawLayer>1</drawLayer>
 
 								<gizmoLabel>Main Turret</gizmoLabel>
 								
@@ -322,32 +323,33 @@
 				
 				<gridCoordinate>(35, 17)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
-				
+				<disableIfUpgradeNodeEnabled>LongBarrel</disableIfUpgradeNodeEnabled>
+
 				<upgrades>
 					<li Class = "Vehicles.TurretUpgrade">
-							<turrets>
-								<li>
-									<turretDef>Roadkill_MainTurret_ShortBarrel</turretDef>
-									
-									<renderProperties>
-										<north>(0, 0.45)</north>
-										<south>(0, 0.25)</south>
-										<east>(0.05, 0.35)</east>
-									</renderProperties>
-									<drawLayer>3</drawLayer>
+						<turrets>
+							<li>
+								<turretDef>Roadkill_MainTurret_ShortBarrel</turretDef>
+								
+								<renderProperties>
+									<north>(0, 0.45)</north>
+									<south>(0, 0.25)</south>
+									<east>(0.05, 0.35)</east>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
 
-									<gizmoLabel>Main Turret</gizmoLabel>
-									
-									<angleRestricted/>
-									<aimPieOffset>(0, 0.85)</aimPieOffset>
-									
-									<key>mainTurret</key>
-								</li>
-							</turrets>
-							<removeTurrets>
-								<li>mainTurret</li>
-							</removeTurrets>
-						</li>
+								<gizmoLabel>Main Turret</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.85)</aimPieOffset>
+								
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+						</removeTurrets>
+					</li>
 				</upgrades>
 				
 				<ingredients>
