@@ -301,7 +301,6 @@
 				
 				<gridCoordinate>(36, 7)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
-				<disableIfUpgradeNodeEnabled>LongBarrel</disableIfUpgradeNodeEnabled>
 
 				<disableIfUpgradeNodesEnabled>
 					<li>LauncherBarrel</li>
