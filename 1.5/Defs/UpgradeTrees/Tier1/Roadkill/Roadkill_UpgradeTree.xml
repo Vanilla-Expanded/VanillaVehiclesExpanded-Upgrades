@@ -14,7 +14,7 @@
 				
 				<work>3200</work>
 				
-				<gridCoordinate>(7, 6)</gridCoordinate>
+				<gridCoordinate>(6, 7)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				
 				<upgrades>
@@ -65,7 +65,7 @@
 				
 				<work>6000</work>
 				
-				<gridCoordinate>(21, 6)</gridCoordinate>
+				<gridCoordinate>(12, 7)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				
 				<upgrades>
@@ -118,7 +118,7 @@
 				
 				<work>3200</work>
 				
-				<gridCoordinate>(35, 6)</gridCoordinate>
+				<gridCoordinate>(18, 7)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				
 				<upgrades>
@@ -193,7 +193,7 @@
 				
 				<work>6000</work>
 				
-				<gridCoordinate>(7, 17)</gridCoordinate>
+				<gridCoordinate>(24, 7)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				
 				<upgrades>
@@ -276,7 +276,7 @@
 				
 				<work>7800</work>
 				
-				<gridCoordinate>(21, 17)</gridCoordinate>
+				<gridCoordinate>(30, 7)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				<disableIfUpgradeNodeEnabled>ShortBarrel</disableIfUpgradeNodeEnabled>
 
@@ -321,7 +321,7 @@
 				
 				<work>6000</work>
 				
-				<gridCoordinate>(35, 17)</gridCoordinate>
+				<gridCoordinate>(36, 7)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				<disableIfUpgradeNodeEnabled>LongBarrel</disableIfUpgradeNodeEnabled>
 
@@ -355,6 +355,173 @@
 				<ingredients>
 					<Steel>40</Steel>
 					<ComponentIndustrial>1</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<!-- Basic -->
+			<li>
+				<key>CargoCapacity</key>
+				<label>Cargo Capacity</label>
+				<description>Improve the cargo capacity of the vehicle slightly.</description>
+				
+				<icon>Upgrades/Upgrade_CargoCapacity</icon>
+				
+				<work>600</work>
+				
+				<gridCoordinate>(6, 15)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>CargoCapacity</def>
+								<value>20</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>25</Steel>
+				</ingredients>
+			</li>
+			<li>
+				<key>Armor</key>
+				<label>Armor</label>
+				<description>Reinforce the armor of the vehicle slightly.</description>
+				
+				<icon>Upgrades/Upgrade_Armor</icon>
+				
+				<work>1200</work>
+				
+				<gridCoordinate>(12, 15)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<stats>
+							<li>
+								<def>ArmorRating_Blunt</def>
+								<value>0.02</value>
+							</li>
+							<li>
+								<def>ArmorRating_Sharp</def>
+								<value>0.04</value>
+							</li>
+						</stats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>50</Steel>
+				</ingredients>
+			</li>
+			<li>
+				<key>Speed</key>
+				<label>Speed</label>
+				<description>Improve the engine of the vehicle, allowing it to reach higher maximum speed.</description>
+				
+				<icon>Upgrades/Upgrade_MovementSpeed</icon>
+				
+				<work>1700</work>
+				
+				<gridCoordinate>(18, 15)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>MoveSpeed</def>
+								<value>1.0</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<VVE_EngineBlock>1</VVE_EngineBlock>
+				</ingredients>
+			</li>
+			<li>
+				<key>Acceleration</key>
+				<label>Acceleration</label>
+				<description>Improve shifting capabilities of transmission to increase acceleration speed of the vehicle slightly.</description>
+				
+				<icon>Upgrades/Upgrade_Acceleration</icon>
+				
+				<work>1000</work>
+				
+				<gridCoordinate>(24, 15)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>AccelerationRate</def>
+								<value>0.005</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<VVE_CarTransmission>1</VVE_CarTransmission>
+				</ingredients>
+			</li>
+			<li>
+				<key>FuelConsumption</key>
+				<label>Fuel Consumption</label>
+				<description>Improve the exhaust system of the vehicle, improving fuel efficiency slightly.</description>
+				
+				<icon>Upgrades/Upgrade_FuelConsumption</icon>
+				
+				<work>1000</work>
+				
+				<gridCoordinate>(30, 15)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<statCategories>
+							<li>
+								<def>FuelConsumptionRate</def>
+								<value>-2</value>
+							</li>
+						</statCategories>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<VVE_CarExhaust>2</VVE_CarExhaust>
+				</ingredients>
+			</li>
+			<li>
+				<key>FuelCapacity</key>
+				<label>Fuel Capacity</label>
+				<description>Increase the size of the chemtank slightly.</description>
+				
+				<icon>Upgrades/Upgrade_FuelCapacity</icon>
+				
+				<work>800</work>
+				
+				<gridCoordinate>(36, 15)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<statCategories>
+							<li>
+								<def>FuelCapacity</def>
+								<value>20</value>
+							</li>
+						</statCategories>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>20</Steel>
 				</ingredients>
 			</li>
 		</nodes>

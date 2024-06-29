@@ -54,4 +54,13 @@
 			</li>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName = "VVE_Bunsen"]/comps</xpath>
+		<value>
+			<li Class = "Vehicles.CompProperties_UpgradeTree">
+				<def>VVE_Bunsen_UpgradeTree</def>
+			</li>
+		</value>
+	</Operation>
 </Patch>
