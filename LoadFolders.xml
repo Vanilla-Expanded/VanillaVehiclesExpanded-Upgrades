@@ -3,7 +3,5 @@
 	<v1.5>
 		<li>/</li>
 		<li>1.5</li>
-		
-		<li IfModActive = "OskarPotocki.VanillaVehiclesExpandedTier3">1.5/_VanillaVehiclesExpandedTier3</li>
 	</v1.5>
 </loadFolders>
