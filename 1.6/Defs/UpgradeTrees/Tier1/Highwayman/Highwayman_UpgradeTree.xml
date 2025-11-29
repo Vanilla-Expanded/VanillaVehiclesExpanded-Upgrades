@@ -7,7 +7,7 @@
 		<nodes>
 			<li>
 				<key>EngineCover</key>
-				<label>Engine Cover</label>
+				<label>Engine cover</label>
 				<description>Cover the engine with extended armor plating, protecting it from gunfire.</description>
 				
 				<icon>Upgrades/Upgrade_EngineCover</icon>
@@ -58,7 +58,7 @@
 			</li>
 			<li>
 				<key>ReinforcedBumper</key>
-				<label>Reinforced Bumper</label>
+				<label>Reinforced bumper</label>
 				<description>Reinforce the front bumper to allow this vehicle to deal more damage during collisions.</description>
 				
 				<icon>Upgrades/Upgrade_Bumper</icon>
@@ -105,7 +105,7 @@
 			</li>
 			<li>
 				<key>LargerCabin</key>
-				<label>Larger Cabin</label>
+				<label>Larger cabin</label>
 				<description>Extend the cabin by adding space for an additional passenger.</description>
 				
 				<icon>Upgrades/Upgrade_ExtraSeat</icon>
@@ -146,7 +146,7 @@
 			</li>
 			<li>
 				<key>OffRoadTires</key>
-				<label>Off Road Tires</label>
+				<label>Off-road tires</label>
 				<description>Replace the tires with deep treaded tires that provide more traction and will allow the vehicle to move significantly faster offroad.</description>
 				
 				<icon>Upgrades/Upgrade_OffroadTires</icon>
@@ -198,7 +198,7 @@
 			</li>
 			<li>
 				<key>ImprovedTurret</key>
-				<label>Improved Turret</label>
+				<label>Improved turret</label>
 				<description>Improve the turret with more efficient firing mechanism and ammo feeding system, allowing it to fire more rapidly and with higher accuracy. Additionally, install smokepop canisters on a turret, allowing the vehicle to eject a smoke screen.</description>
 				
 				<icon>Upgrades/Upgrade_TurretImproved</icon>
@@ -249,7 +249,7 @@
 								</renderProperties>
 								<drawLayer>3</drawLayer>
 
-								<gizmoLabel>Main Turret</gizmoLabel>
+								<gizmoLabel>Main turret</gizmoLabel>
 								
 								<angleRestricted/>
 								<aimPieOffset>(0, 0.65)</aimPieOffset>
@@ -271,7 +271,7 @@
 			<!-- Basic -->
 			<li>
 				<key>CargoCapacity</key>
-				<label>Cargo Capacity</label>
+				<label>Cargo capacity</label>
 				<description>Improve the cargo capacity of the vehicle slightly.</description>
 				
 				<icon>Upgrades/Upgrade_CargoCapacity</icon>
@@ -383,7 +383,7 @@
 			</li>
 			<li>
 				<key>FuelConsumption</key>
-				<label>Fuel Consumption</label>
+				<label>Fuel consumption</label>
 				<description>Improve the exhaust system of the vehicle, improving fuel efficiency slightly.</description>
 				
 				<icon>Upgrades/Upgrade_FuelConsumption</icon>
@@ -410,7 +410,7 @@
 			</li>
 			<li>
 				<key>FuelCapacity</key>
-				<label>Fuel Capacity</label>
+				<label>Fuel capacity</label>
 				<description>Increase the size of the chemtank slightly.</description>
 				
 				<icon>Upgrades/Upgrade_FuelCapacity</icon>

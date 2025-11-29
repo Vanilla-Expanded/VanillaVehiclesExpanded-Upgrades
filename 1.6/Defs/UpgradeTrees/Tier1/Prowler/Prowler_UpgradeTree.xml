@@ -7,7 +7,7 @@
 		<nodes>
 			<li>
 				<key>ReinforcedArmor</key>
-				<label>Reinforced Armor</label>
+				<label>Reinforced armor</label>
 				<description>Weld a layer of reinforced steel plating to the vehicle, increasing its armor value at the cost of increasing vehicle mass and lowering acceleration.</description>
 				
 				<icon>Upgrades/Upgrade_ExtraArmor</icon>
@@ -60,7 +60,7 @@
 			</li>
 			<li>
 				<key>OffRoadTires</key>
-				<label>Off Road Tires</label>
+				<label>Off-road tires</label>
 				<description>Replace the tires with deep treaded tires that provide more traction and will allow the vehicle to move significantly faster offroad.</description>
 				
 				<icon>Upgrades/Upgrade_OffroadTires</icon>
@@ -114,7 +114,7 @@
 			</li>
 			<li>
 				<key>ChainedTires</key>
-				<label>Chained Tires</label>
+				<label>Chained tires</label>
 				<description>Mount thick steel chains around tires, preventing them from slipping on icy surfaces and greatly improving winter travel speed. The additional grip slightly increases acceleration.</description>
 				
 				<icon>Upgrades/Upgrade_ChainedTires</icon>
@@ -205,8 +205,8 @@
 			</li>
 			<li>
 				<key>MiniTurret</key>
-				<label>Mini Turret</label>
-				<description>Install an autonomous miniturret at the front of the vehicle. Requires steel to refurbish</description>
+				<label>Mini-turret</label>
+				<description>Install an autonomous mini-turret at the front of the vehicle. Requires steel to refurbish</description>
 				
 				<icon>Upgrades/Upgrade_Turret</icon>
 				
@@ -228,7 +228,7 @@
 								</renderProperties>
 								<drawLayer>3</drawLayer>
 
-								<gizmoLabel>Main Turret</gizmoLabel>
+								<gizmoLabel>Mini-turret</gizmoLabel>
 								
 								<angleRestricted/>
 								<aimPieOffset>(0, -0.25)</aimPieOffset>
@@ -259,7 +259,7 @@
 			<!-- Basic -->
 			<li>
 				<key>CargoCapacity</key>
-				<label>Cargo Capacity</label>
+				<label>Cargo capacity</label>
 				<description>Improve the cargo capacity of the vehicle slightly.</description>
 				
 				<icon>Upgrades/Upgrade_CargoCapacity</icon>
@@ -371,7 +371,7 @@
 			</li>
 			<li>
 				<key>FuelConsumption</key>
-				<label>Fuel Consumption</label>
+				<label>Fuel consumption</label>
 				<description>Improve the exhaust system of the vehicle, improving fuel efficiency slightly.</description>
 				
 				<icon>Upgrades/Upgrade_FuelConsumption</icon>
@@ -398,7 +398,7 @@
 			</li>
 			<li>
 				<key>FuelCapacity</key>
-				<label>Fuel Capacity</label>
+				<label>Fuel capacity</label>
 				<description>Increase the size of the chemtank slightly.</description>
 				
 				<icon>Upgrades/Upgrade_FuelCapacity</icon>

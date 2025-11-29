@@ -7,7 +7,7 @@
 		<nodes>
 			<li>
 				<key>BigChemtanks</key>
-				<label>Big Chemtanks</label>
+				<label>Big chemtanks</label>
 				<description>Attach two big chemfuel canisters to the bottom of the vehicle to allow it to travel greater distances without the risk of running out of fuel.</description>
 				
 				<icon>Upgrades/Upgrade_FuelStorage</icon>
@@ -46,7 +46,7 @@
 			</li>
 			<li>
 				<key>ExpandedCargoSpace</key>
-				<label>Expanded Cargo Space</label>
+				<label>Expanded cargo space</label>
 				<description>Increase the amount of cargo that can be hauled by this vehicle, and add two additional passenger slots.</description>
 				
 				<icon>Upgrades/Upgrade_ExpandedCargo</icon>
@@ -102,7 +102,7 @@
 			</li>
 			<li>
 				<key>ReinforcedArmor</key>
-				<label>Reinforced Armor</label>
+				<label>Reinforced armor</label>
 				<description>Weld a layer of reinforced steel plating to the vehicle, increasing its armor value at the cost of increasing vehicle mass and lowering acceleration.</description>
 				
 				<icon>Upgrades/Upgrade_ExtraArmor</icon>
@@ -155,7 +155,7 @@
 			</li>
 			<li>
 				<key>OffroadTires</key>
-				<label>Offroad Tires</label>
+				<label>Off-road tires</label>
 				<description>Replace the tires with deep threaded tires that provide more traction and will allow the vehicle to move significantly faster offroad.</description>
 				
 				<icon>Upgrades/Upgrade_OffroadTires</icon>
@@ -207,7 +207,7 @@
 			</li>
 			<li>
 				<key>ExteriorEngine</key>
-				<label>Exterior Engine</label>
+				<label>Exterior engine</label>
 				<description>Elevate the engine to improve its efficiency at the cost of exposing it to damage.</description>
 				
 				<icon>Upgrades/Upgrade_SupercarEngine</icon>
@@ -262,7 +262,7 @@
 			<!-- Basic -->
 			<li>
 				<key>CargoCapacity</key>
-				<label>Cargo Capacity</label>
+				<label>Cargo capacity</label>
 				<description>Improve the cargo capacity of the vehicle slightly.</description>
 				
 				<icon>Upgrades/Upgrade_CargoCapacity</icon>
@@ -374,7 +374,7 @@
 			</li>
 			<li>
 				<key>FuelConsumption</key>
-				<label>Fuel Consumption</label>
+				<label>Fuel consumption</label>
 				<description>Improve the exhaust system of the vehicle, improving fuel efficiency slightly.</description>
 				
 				<icon>Upgrades/Upgrade_FuelConsumption</icon>
@@ -401,7 +401,7 @@
 			</li>
 			<li>
 				<key>FuelCapacity</key>
-				<label>Fuel Capacity</label>
+				<label>Fuel capacity</label>
 				<description>Increase the size of the chemtank slightly.</description>
 				
 				<icon>Upgrades/Upgrade_FuelCapacity</icon>

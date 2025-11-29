@@ -7,7 +7,7 @@
 		<nodes>
 			<li>
 				<key>EngineCover</key>
-				<label>Engine Cover</label>
+				<label>Engine cover</label>
 				<description>Cover the engine with extended armor plating, protecting it from gunfire.</description>
 				
 				<icon>Upgrades/Upgrade_EngineCover</icon>
@@ -58,7 +58,7 @@
 			</li>
 			<li>
 				<key>ReinforcedArmor</key>
-				<label>Reinforced Armor</label>
+				<label>Reinforced armor</label>
 				<description>Weld a layer of reinforced steel plating to the vehicle, increasing its armor value at the cost of increasing vehicle mass and lowering acceleration.</description>
 				
 				<icon>Upgrades/Upgrade_ExtraArmor</icon>
@@ -111,7 +111,7 @@
 			</li>
 			<li>
 				<key>ArmoredTreads</key>
-				<label>Armored Treads</label>
+				<label>Armored treads</label>
 				<description>Improve the armor of the treads by covering them in thick steel plating.</description>
 				
 				<icon>Upgrades/Upgrade_TreadArmor</icon>
@@ -194,7 +194,7 @@
 			</li>
 			<li>
 				<key>LongBarrel</key>
-				<label>Long Barrel</label>
+				<label>Long barrel</label>
 				<description>Increase the length of the tank barrel, allowing for more precise shots over significantly longer distance, but decreasing the rotation speed of the cannon.</description>
 				
 				<icon>Upgrades/Upgrade_TurretLong</icon>
@@ -222,7 +222,7 @@
 								</renderProperties>
 								<drawLayer>3</drawLayer>
 
-								<gizmoLabel>Main Turret</gizmoLabel>
+								<gizmoLabel>Main turret</gizmoLabel>
 								
 								<angleRestricted/>
 								<aimPieOffset>(0, 1.5)</aimPieOffset>
@@ -243,7 +243,7 @@
 			</li>
 			<li>
 				<key>LauncherBarrel</key>
-				<label>Launcher Barrel</label>
+				<label>Launcher barrel</label>
 				<description>Change the fuel injection system and install a barrel choke to allow the tank to fire long range explosive flame projectiles instead of a stream of fire.</description>
 				
 				<icon>Upgrades/Upgrade_TurretLauncher</icon>
@@ -271,7 +271,7 @@
 								</renderProperties>
 								<drawLayer>3</drawLayer>
 
-								<gizmoLabel>Main Turret</gizmoLabel>
+								<gizmoLabel>Main turret</gizmoLabel>
 								
 								<angleRestricted/>
 								<aimPieOffset>(0, 1.5)</aimPieOffset>
@@ -292,7 +292,7 @@
 			</li>
 			<li>
 				<key>ShortBarrel</key>
-				<label>Short Barrel</label>
+				<label>Short barrel</label>
 				<description>Decrease the length of the tank barrel, allowing for more rapid shots at the cost of precision and range. The reduced weight of the turret allows for faster rotation speed.</description>
 				
 				<icon>Upgrades/Upgrade_TurretShort</icon>
@@ -320,7 +320,7 @@
 								</renderProperties>
 								<drawLayer>3</drawLayer>
 
-								<gizmoLabel>Main Turret</gizmoLabel>
+								<gizmoLabel>Main turret</gizmoLabel>
 								
 								<angleRestricted/>
 								<aimPieOffset>(0, 1.5)</aimPieOffset>
@@ -342,7 +342,7 @@
 			<!-- Basic -->
 			<li>
 				<key>CargoCapacity</key>
-				<label>Cargo Capacity</label>
+				<label>Cargo capacity</label>
 				<description>Improve the cargo capacity of the vehicle slightly.</description>
 				
 				<icon>Upgrades/Upgrade_CargoCapacity</icon>
@@ -454,7 +454,7 @@
 			</li>
 			<li>
 				<key>FuelConsumption</key>
-				<label>Fuel Consumption</label>
+				<label>Fuel consumption</label>
 				<description>Improve the exhaust system of the vehicle, improving fuel efficiency slightly.</description>
 				
 				<icon>Upgrades/Upgrade_FuelConsumption</icon>
@@ -481,7 +481,7 @@
 			</li>
 			<li>
 				<key>FuelCapacity</key>
-				<label>Fuel Capacity</label>
+				<label>Fuel capacity</label>
 				<description>Increase the size of the chemtank slightly.</description>
 				
 				<icon>Upgrades/Upgrade_FuelCapacity</icon>
