@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Vanilla Vehicles Expanded - Upgrades</name>
-    <author>Oskar Potocki, Smash Phil</author>
-    <url></url>
-    <description>Elevate your gameplay with the Vanilla Vehicles Expanded - Upgrades, which offers a revolutionary enhancement to your vehicle management in-game. This mod introduces a comprehensive upgrade system that allows players to customize and enhance their vehicles using valuable in-game resources.
+	<name>Vanilla Vehicles Expanded - Upgrades</name>
+	<author>Oskar Potocki, Smash Phil</author>
+	<url/>
+	<description>Elevate your gameplay with the Vanilla Vehicles Expanded - Upgrades, which offers a revolutionary enhancement to your vehicle management in-game. This mod introduces a comprehensive upgrade system that allows players to customize and enhance their vehicles using valuable in-game resources.
 Here’s what you can expect:
 
 - Tailored Customization: Each vehicle in your fleet can be individually upgraded with unique enhancements, from reinforced armor and engine covers to offroad tires and cargo expansions.
@@ -14,13 +14,14 @@ Here’s what you can expect:
 We’re excited to utilise what Vehicles Framework has to offer, and you can expect more vehicle upgrades to be added to this mod later down the line.
 
 </description>
-    <packageId>OskarPotocki.VanillaVehiclesExpandedUpgrades</packageId>
+	<packageId>OskarPotocki.VanillaVehiclesExpandedUpgrades</packageId>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/VELogo</modIconPath>
-    <supportedVersions>
+	<supportedVersions>
 		<li>1.5</li>
-    <li>1.6</li>
-    </supportedVersions>
-    <modDependencies>
+		<li>1.6</li>
+		<li>1.7</li>
+	</supportedVersions>
+	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
 			<displayName>Harmony</displayName>
